@@ -73,7 +73,7 @@ export default function BridgeEducation() {
         setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
     };
 
-    return (<div className="min-h-screen bg-white">
+    return (<div className="min-h-screen bg-white overflow-hidden">
         {/* Top Bar */}
         <div className="bg-green-800 text-white py-2 px-4">
             <div className="max-w-7xl mx-auto flex justify-between items-center text-sm">
@@ -400,7 +400,7 @@ transition-all duration-300 hover:brightness-90"> Explore Our Services
             <LocationSection></LocationSection>
         </section>
         {/* Footer */}
-        <footer className="bg-gray-800 text-gray-300 py-12 px-4 relative">
+        <footer className="bg-gray-800 text-gray-300 py-12 px-4 relative overflow-hidden">
             <div className="absolute -top-20 -left-20 w-60 h-60 bg-gray-300/30 rounded-full opacity-50"></div>
             <div className="absolute -bottom-12 -right-12 w-60 h-60 bg-gray-300/30 rounded-full opacity-50"></div>
 
